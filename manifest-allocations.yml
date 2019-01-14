@@ -3,9 +3,11 @@ applications:
   path: ./applications/allocations-server/build/libs/allocations-server.jar
   routes:
   - route: allocations-pal-tracker-distributed-boisterous-rhinocerous.cfapps.io
-  memory: 1G
+  memory: 2G
   instances: 1
-  env:
-    REGISTRATION_SERVER_ENDPOINT: http://pal-tracker-distributed-boisterous-rhinocerous.cfapps.io
   services:
   - tracker-allocations-database
+  - tracker-service-registry
+
+
+

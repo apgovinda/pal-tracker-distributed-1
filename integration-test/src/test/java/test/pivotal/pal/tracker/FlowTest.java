@@ -11,6 +11,9 @@ import test.pivotal.pal.tracker.support.ApplicationServer;
 import test.pivotal.pal.tracker.support.HttpClient;
 import test.pivotal.pal.tracker.support.Response;
 
+import java.io.IOException;
+
+import static javax.swing.UIManager.put;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Fail.fail;
 import static test.pivotal.pal.tracker.support.MapBuilder.jsonMapBuilder;

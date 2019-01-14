@@ -3,9 +3,9 @@ applications:
   path: ./applications/timesheets-server/build/libs/timesheets-server.jar
   routes:
   - route: timesheets-pal-tracker-distributed-boisterous-rhinocerous.cfapps.io
-  memory: 1G
+  memory: 2G
   instances: 1
-  env:
-    REGISTRATION_SERVER_ENDPOINT: http://pal-tracker-distributed-boisterous-rhinocerous.cfapps.io
   services:
   - tracker-timesheets-database
+  - tracker-service-registry
+
