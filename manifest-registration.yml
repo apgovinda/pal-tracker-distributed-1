@@ -8,4 +8,3 @@ applications:
   services:
   - tracker-registration-database
   - tracker-service-registry
-
